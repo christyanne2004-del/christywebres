@@ -1,0 +1,173 @@
+/* body of poster */
+* {
+  box-sizing: border-box;
+}
+
+.poster {
+  width: 100%;
+  height: 100vh;
+  background: #b9603a;
+  position: relative;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;         
+}
+
+
+
+/* research talks headers   */
+h1 {
+  position: absolute;
+  top: 10px;
+  left: 60px;
+  letter-spacing: 4px;
+  font-size: 160px;
+  font-family: "Anton", sans-serif;
+  color: #2f0404;
+  margin: 0;
+  
+}
+
+h2 {
+  position: absolute;
+  top: 40px;
+  left: 740px;
+  letter-spacing: 4px;
+  font-size: 170px;
+  font-family: "Anton", sans-serif;
+  color: #2f0404;
+  margin: 0;
+}
+
+
+
+
+
+
+/* 2nd titile with date and time etc */
+.date {
+  position: absolute;
+  top: 230px;
+  left: 60px;
+ letter-spacing: 2px;
+  font-size: 28px;
+  font-family: "Anton", sans-serif;
+  color: #2f0404;
+}
+
+
+.time {
+  position: absolute;
+  top: 290px;
+  left: 60px;
+    letter-spacing: 2px;
+  font-size: 28px;
+  font-family: "Anton", sans-serif;
+  color: #2f0404;
+}
+
+.room {
+  position: absolute;
+  top: 340px;
+  left: 60px;
+    letter-spacing: 2px;
+  font-size: 28px;
+  font-family: "Anton", sans-serif;
+  color: #2f0404;
+}
+
+
+
+/*  names  */
+
+.speaker-box {
+  position: absolute;
+  background: rgba(53, 35, 44, 0.85);
+  border: 3px solid #111;
+  box-shadow: 10px 10px #00000033;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  overflow: hidden;
+  transition: width 0.5s ease, height 0.5s ease;
+  color: #220000;
+  cursor: se-resize;
+  padding: 15px;
+}
+
+
+.speaker-name {
+  font-size: 28px;
+  font-family: "Anton", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+
+
+/* hidden body  */
+.speaker-details {
+   opacity: 0;  /* hides my body  */
+  transition: opacity 0.5s ease;
+  margin-top: 12px;
+  font-size: 12px;
+  font-family: "Miranda Sans", sans-serif;
+  color: #220000;
+  text-align: left;
+  overflow-y: auto;   
+  max-height: 100%;   
+
+}
+
+
+
+
+  
+
+  /* scroll bar deetz  */
+.speaker-details::-webkit-scrollbar {
+  width: 9px;
+}
+
+.speaker-details::-webkit-scrollbar-thumb {
+  background: #291111;
+  border-radius: 10px;
+}
+
+
+
+
+/* name placements */
+#vanessa {
+  left: 60px;
+  top: 480px;
+  width: 520px;
+  height: 100px;
+  transform: rotate(-2deg);
+}
+
+#anna {
+  right: 90px;
+  top: 360px;
+  width: 360px;
+  height: 100px;
+  transform: rotate(20deg);
+}
+
+#kelsey {
+  right: 190px;
+  bottom: 160px;
+  width: 410px;
+  height: 100px;
+  transform: rotate(-7deg);
+}
+
+
+
+
+/* responsiveness  for phone */
+
